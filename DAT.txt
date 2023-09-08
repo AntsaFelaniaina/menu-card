@@ -1,0 +1,62 @@
+1/ créer un projet symfony
+symfony new --webapp new-website
+symfony new my_project_directory --version="6.3.*" --webapp
+composer create-project symfony/website-skeleton composer-project
+latest version of symfony => symfony new --webapp first-website --version=lts
+
+2/Faire fonction le serveur en arrière plan et l'arrêter :
+symfony serve -d
+symfony serve:stop
+
+3/ Installer certificat TLS
+symfony server:ca:install
+
+4/ Installer maker-bundle  
+composer require make
+
+5/ Créer un controller
+symfony console make:controller MainController
+
+6/ si attributes routing ne marche pas :
+composer require doctrine/annotations
+
+7/ Créer une entité/ajouter une nouvelle propriétée 
+symfony console make:entity
+
+8/Mettre à jour la base de donnée
+symfony console doctrine:schema:update --complete --force
+symfony console doctrine:schema:update --complete --dump-sql => to look at the change that we're about to make
+
+9/créer une base de données
+symfony console doctrine:database:create
+
+10/ afficher toutes les routes
+symfony console debug:router
+
+11/ install symfony form
+composer require form
+
+12/ Make a form
+symfony console make:form
+
+13/ create getter and setter
+symfony console make:entity --regenerate
+
+14/ if getting error when uploading files
+composer require mime
+
+15/ Create secure User
+symfony console make:user
+
+16/ Make authentification
+symfony console make:auth
+
+17/ Install profiler/ to easen debug
+composer require profiler
+
+18/ install package needed for sending email
+composer require mailer
+
+19/ Install third party server mail provider (ex : mailgun-mailer)
+composer require symfony/mailgun-mailer
+used https://mailtrap.io/ as mail server

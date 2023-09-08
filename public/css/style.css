@@ -118,7 +118,7 @@ h6,
 }
 
 .hero-header {
-    background: url(../img/hero.jpg) top right no-repeat;
+    /* background: url(../img/hero.jpg) top right no-repeat; */
     background-size: cover;
 }
 
@@ -318,12 +318,9 @@ h6,
 /* Data filter */
 .filterDiv {
     float: left!important;
-    background-color: #2196F3!important;
-    color: #ffffff!important;
-    width: 100px!important;
-    line-height: 100px!important;
+    /* color: #ffffff!important; */
     text-align: center!important;
-    margin: 2px!important;
+    /* margin: 2px; */
     display: none!important; /* Hidden by default */
   }
   
@@ -331,3 +328,11 @@ h6,
   .show {
     display: block!important;
   }
+
+.dishes{
+    width: 100%;
+}
+
+button.active{
+    color: #E88F2A!important;
+}
