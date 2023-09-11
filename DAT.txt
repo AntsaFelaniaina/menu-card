@@ -60,3 +60,10 @@ composer require mailer
 19/ Install third party server mail provider (ex : mailgun-mailer)
 composer require symfony/mailgun-mailer
 used https://mailtrap.io/ as mail server
+
+18/ To use css in a twig file
+composer require twig/extra-bundle twig/cssinliner-extra
+
+19/ Create CRUD
+symfony console make:crud
+
